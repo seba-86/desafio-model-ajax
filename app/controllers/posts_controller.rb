@@ -1,23 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
-  # GET /posts
-  def index
-    
-  end
-
-  # GET /posts/1
-  def show
-  end
-
-  # GET /posts/new
-  def new
-    # @post = Post.new
-  end
-
   # GET /posts/1/edit
   def edit
-    
+   
   end
 
   # POST /posts
@@ -30,11 +16,8 @@ class PostsController < ApplicationController
 
   # PATCH/PUT /posts/1
   def update
-    # @post.update(post_params)
-      # redirect_to @post, notice: 'Post was successfully updated.'
-    # else
-    #   render :edit
-    # end
+    @post.update(post_params)
+      
   end
 
   # DELETE /posts/1
