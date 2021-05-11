@@ -1,0 +1,9 @@
+<h1>Post</h1>
+<%= link_to 'Reload Page', root_path, data: {confirm: "Estas seguro ? "}  %>
+<h1> Crear post con ajax </h1>
+<%= render 'posts/form', post: @post%>
+
+<h2> Aqui van los posts creados</h2>
+<div id='my_posts'>
+    <%= render @posts, post: @post %>
+</div>

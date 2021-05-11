@@ -1,0 +1,6 @@
+// console.log('<%=@post.title %> <%=@post.content %>')
+document.getElementById('my_posts').insertAdjacentHTML("beforeend",'<%= j render @post %>')
+//Borrar datos ya enviados
+document.querySelector('#post_title').value = "";
+document.querySelector('#post_content').value = "";
+
